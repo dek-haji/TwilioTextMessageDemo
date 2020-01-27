@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 
 app.get('/send-text', (req, res) => {
     const { recepient, textmessage } = req.query
-    
     client.messages.create({
         body: textmessage,
         to: recepient,
