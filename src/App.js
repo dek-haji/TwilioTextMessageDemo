@@ -28,9 +28,12 @@ class App extends Component {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="test">
+             <h2>Send Text Message</h2>
+        </div>
         <img src={logo} className="App-logo" alt="logo" />
-        <div style={{ marginTop: 10 }}>
-          <h2>Send Text Message</h2>
+        <div style={{ marginTop: 10 },
+        {border: 10}}>
           <label>Your Phone number</label>
           <br />
           <input value={text.recepient}
